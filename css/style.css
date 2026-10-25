@@ -1,0 +1,136 @@
+/* ==========================
+   1. ESTRUCTURA GENERAL
+   ========================== */
+
+body {
+    margin: 0;
+    background-color: #F6F1EB;
+    color: #202B3C;
+}
+
+/* ==========================
+   2. HEADER
+   ========================== */
+
+header {
+    background-color: #202B3C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   3. NAVEGACIÓN
+   ========================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav a {
+    padding: 8px 16px;
+    background-color: #364457;
+    color: #FFFFFF;
+    border-radius: 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #7B3445;
+}
+
+/* ==========================
+   4. CONTENIDO PRINCIPAL
+   ========================== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main section {
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 16px;
+    background-color: #E3E8EF;
+}
+
+/* ==========================
+   5. COLORES DE LAS SECCIONES
+   ========================== */
+
+#presentacion {
+    background-color: #E3E8EF;
+}
+
+#proyectos {
+    background-color: #F0E1E3;
+}
+
+#conocimiento {
+    background-color: #E3E8EF;
+}
+
+#recursos {
+    background-color: #FFFFFF;
+}
+/* ==========================
+   6. SUBSECCIONES
+   ========================== */
+
+/* Subsecciones de conocimiento */
+#conocimiento > section,
+#conocimiento > article,
+#conocimiento > div {
+    background-color: #D7E0EA;
+    border-radius: 12px;
+}
+
+/* Subsecciones de proyectos */
+#proyectos > section,
+#proyectos > article,
+#proyectos > div {
+    background-color: #EAD5D9;
+    border-radius: 12px;
+}
+/* ==========================
+   7. FOOTER
+   ========================== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #202B3C;
+    color: #FFFFFF
+}
+/* ==========================
+   8. ENLACES DEL FOOTER
+   ========================== */
+
+footer a {
+    color: #E3E8EF;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #D7C1C8;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
