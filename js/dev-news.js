@@ -1,5 +1,5 @@
 
-const NEWS_API = "https://hn.algolia.com/api/v1/search";
+const NEWS_API = "https://hn.algolia.com/api/v1/search_by_date";
 
 const NEWS_QUERIES = [
   "programming",
@@ -9,7 +9,7 @@ const NEWS_QUERIES = [
 ];
 
 const NEWS_LIMIT = 5;
-const CACHE_KEY = "dev-news-cache-v1";
+const CACHE_KEY = "dev-news-cache-v2";
 const CACHE_TIME = 10 * 60 * 1000;
 
 const list = document.querySelector("#dev-news-list");
@@ -53,12 +53,16 @@ async function fetchNews() {
 
   if (cached) return cached;
 
+  const haceSieteDias =
+    Math.floor(Date.now() / 1000) - 7 * 24 * 60 * 60;
+
   const results = await Promise.all(
     NEWS_QUERIES.map(async (query) => {
       const params = new URLSearchParams({
         query,
         tags: "story",
-        hitsPerPage: "10"
+        hitsPerPage: "10",
+        numericFilters: `created_at_i>${haceSieteDias}`
       });
 
       const response = await fetch(
@@ -110,7 +114,9 @@ async function fetchNews() {
     .sort((a, b) => b.date - a.date)
     .slice(0, NEWS_LIMIT);
 
-  saveCachedNews(articles);
+  if (articles.length > 0) {
+    saveCachedNews(articles);
+  }
 
   return articles;
 }
@@ -148,7 +154,7 @@ function renderNews(articles) {
     date.textContent = formatDate(article.date);
 
     const points = document.createElement("span");
-    points.textContent = `${article.points} puntos`;
+    points.textContent = ` · ${article.points} votos`;
 
     meta.append(date, points);
     item.append(link, meta);
