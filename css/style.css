@@ -49,6 +49,11 @@ nav a {
 nav a:hover {
     background-color: #7B3445;
 }
+nav a:focus-visible,
+a:focus-visible {
+    outline: 3px solid #7B3445;
+    outline-offset: 3px;
+}
 
 /* ==========================
    4. CONTENIDO PRINCIPAL
@@ -115,7 +120,7 @@ footer {
     align-items: center;
     gap: 20px;
     background-color: #202B3C;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 /* ==========================
    8. ENLACES DEL FOOTER
@@ -133,4 +138,145 @@ footer a:visited {
 footer a:hover {
     color: #FFFFFF;
     text-decoration: underline;
+}
+/* ==========================
+   9. DISTRIBUCIÓN EN COLUMNAS
+   ========================== */
+
+.content-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 24px;
+    align-items: start;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    box-sizing: border-box;
+}
+
+.content-layout main {
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    min-width: 0;
+}
+
+/* ==========================
+   10. NOTICIAS DE PROGRAMACIÓN
+   ========================== */
+
+.dev-news {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    overflow-wrap: anywhere;
+}
+
+.dev-news__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.dev-news__header h2 {
+    margin: 0;
+}
+
+.dev-news__indicator {
+    width: 10px;
+    height: 10px;
+    flex: 0 0 10px;
+    border-radius: 50%;
+    background-color: #56876D;
+}
+
+.dev-news__subtitle {
+    color: #596579;
+    font-size: 0.9rem;
+}
+
+.dev-news__list {
+    display: grid;
+    gap: 16px;
+}
+
+.dev-news__item {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #D7E0EA;
+}
+
+.dev-news__item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.dev-news__item h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.dev-news__item a {
+    color: #202B3C;
+    text-decoration: none;
+}
+
+.dev-news__item a:hover {
+    color: #7B3445;
+    text-decoration: underline;
+}
+
+.dev-news__meta {
+    color: #596579;
+    font-size: 0.8rem;
+}
+
+.dev-news__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #7B3445;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dev-news__more:hover {
+    text-decoration: underline;
+}
+
+.dev-news__status {
+    color: #596579;
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   11. ADAPTACIÓN A MÓVILES
+   ========================== */
+
+@media (max-width: 768px) {
+    .content-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+        padding: 16px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        padding: 16px;
+        text-align: center;
+    }
 }

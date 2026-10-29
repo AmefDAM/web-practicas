@@ -27,127 +27,162 @@
             </ul>
         </nav>
     </header>
+    <div class="content-layout">
+        <main>
+            <!-- Presentación, proyectos, conocimiento... -->
+            <section id="presentacion">
+                <h2>
+                    Qué es esto y quién soy yo.
+                </h2>
+                <p>
+                    Saludos y <b>bienvenid@s</b>, hayáis llegado aquí como hayáis llegado.
+                </p>
+                <p>
+                    Yo soy <b>Amef</b> y estoy estudiando <abbr title="Desarrollo de Aplicaciones Multiplataforma"><b>DAM</b></abbr> en el <a href="https://centros.edu.xunta.gal/iesteis/"><b>IES de Teis</b></a>. Desde siempre me ha gustado detectar, reconocer y entender patrones, buscar lógica al funcionamiento de las cosas y convertir datos en concreciones útiles (desde simples gráficos a pequeñas aplicaciones útiles en mi día a día).
+                    <br>
+                    Como parte de mi formación académica y aprendizaje individual, estoy llevando a cabo diferentes proyectos y planificando otros.
+                </p>
+                <p>
+                    Esta web es una especie de <b>laboratorio de científico loco</b> para dichos proyectos: mi <i>campo de pruebas</i>, mi <i>expositor de logros</i> y también mi <i>cementerio de fracasos</i>. No esperes encontrar aquí la perfección ni soluciones definitivas: habrá aciertos, errores, genialidades accidentales, chapuzas funcionales y quizás hasta desastres de proporciones épicas (de todo se aprende y todo deja algo). Esto es más una herramienta propia para practicar, fijar conceptos y desarrollar habilidades, un mapa de mi camino <i>from zero to hero</i>. Aun así, intentaré que todo tenga algo que aportar. Si dicho camino te sirve de algo, ya sea para hacerte una idea de hacia dónde dirigir el tuyo propio o incluso para no cometer los mismos errores que yo, ¡bienvenido sea!
+                </p>
+                <p>
+                    Puedes consultar mis proyectos en mi <a href="https://github.com/AmefDAM">GitHub académico</a> o explorar el <a href="https://github.com/AmefDAM/web-practicas">código fuente de esta web</a>.
+                </p>
+            </section>
+            <section id="proyectos">
+                <h2>
+                    Proyectos
+                </h2>
+                <p>
+                    <!-- Breve descripción de la sección -->
+                    Proyectos académicos y personales en los que trabajo o que tengo previsto desarrollar.
+                </p>
+                <!-- Proyectos -->
+                <article id="web-practicas">
+                    <h3>
+                        Amefdam's Site
+                    </h3>
+                    <p>
+                        <span class="project-status status-wip">WIP</span>
+                    </p>
+                    <p>
+                        Web personal para documentar mi aprendizaje, presentar proyectos y organizar conocimientos.
+                    </p>
+                    <p>
+                        <a href="https://amefdam.42web.io/">Web publicada</a>
+                        |
+                        <a href="https://github.com/AmefDAM/web-practicas">Código fuente</a>
+                    </p>
+                </article>
+                <article id="juego-web">
+                    <h3>
+                        Juego web
+                    </h3>
+                    <p>
+                        <span class="project-status status-planned">PLANNED</span>
+                    </p>
+                    <p>
+                        Proyecto de juego web previsto para desarrollar con PHP y MySQL. Todavía no iniciado.
+                    </p>
+                </article>
+            </section>
+            <section id="conocimiento">
+                <h2>
+                    Conocimiento
+                </h2>
+                <p>
+                    Apuntes, documentación y recursos para organizar y consolidar lo que voy aprendiendo.
+                </p>
+                <!-- Recursos de conocimiento -->
+                <section id="conocimiento-git">
+                    <h3>
+                        Git y GitHub
+                    </h3>
+                    <article id="git-notes">
+                        <h4>
+                            Git Notes
+                        </h4>
+                        <p>
+                            <span class="resource-type">Documentación</span>
+                        </p>
+                        <p>
+                            Apuntes prácticos sobre Git y GitHub, comandos, flujos de trabajo y gestión de repositorios.
+                        </p>
+                        <p>
+                            <a href="https://github.com/AmefDAM/gitnotes">Consultar apuntes</a>
+                        </p>
+                    </article>
+                </section>
+                <section id="conocimiento-python">
+                    <h3>
+                        Python y programación
+                    </h3>
+                    <article id="python-notebook">
+                        <h4>
+                            Python Fundamentals Notebook
+                        </h4>
+                        <p>
+                            <span class="resource-type">Documentación</span>
+                        </p>
+                        <p>
+                            Cuaderno de Jupyter Notebook con apuntes, ejemplos y ejercicios prácticos para aprender los fundamentos de Python.
+                        </p>
+                        <p>
+                            <a href="https://github.com/AmefDAM/python_fundamentals_notebook">Consultar apuntes</a>
+                        </p>
+                    </article>
+                    <article id="codewars-katas">
+                        <h4>
+                            Codewars Katas
+                        </h4>
+                        <p>
+                            <span class="resource-type">Prácticas</span>
+                        </p>
+                        <p>
+                            Colección de katas resueltos en Python para practicar programación, aplicar conceptos y desarrollar habilidades de resolución de problemas.
+                        </p>
+                        <p>
+                            <a href="https://github.com/AmefDAM/codewars-katas">Consultar soluciones</a>
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </main>
 
-    <main>
-        <!-- Presentación, proyectos, conocimiento... -->
-        <section id="presentacion">
-            <h2>
-                Qué es esto y quién soy yo.
-            </h2>
-            <p>
-                Saludos y <b>bienvenid@s</b>, hayáis llegado aquí como hayáis llegado.
+        <aside class="sidebar">
+
+        <section class="dev-news" aria-labelledby="dev-news-title">
+            <div class="dev-news__header">
+                <h2 id="dev-news-title">Noticias dev</h2>
+                <span class="dev-news__indicator" aria-hidden="true"></span>
+            </div>
+
+            <p class="dev-news__subtitle">
+                Actualidad sobre programación
             </p>
-            <p>
-                Yo soy <b>Amef</b> y estoy estudiando <abbr title="Desarrollo de Aplicaciones Multiplataforma"><b>DAM</b></abbr> en el <a href="https://centros.edu.xunta.gal/iesteis/"><b>IES de Teis</b></a>. Desde siempre me ha gustado detectar, reconocer y entender patrones, buscar lógica al funcionamiento de las cosas y convertir datos en concreciones útiles (desde simples gráficos a pequeñas aplicaciones útiles en mi día a día).
-                <br>
-                Como parte de mi formación académica y aprendizaje individual, estoy llevando a cabo diferentes proyectos y planificando otros.
-            </p>
-            <p>
-                Esta web es una especie de <b>laboratorio de científico loco</b> para dichos proyectos: mi <i>campo de pruebas</i>, mi <i>expositor de logros</i> y también mi <i>cementerio de fracasos</i>. No esperes encontrar aquí la perfección ni soluciones definitivas: habrá aciertos, errores, genialidades accidentales, chapuzas funcionales y quizás hasta desastres de proporciones épicas (de todo se aprende y todo deja algo). Esto es más una herramienta propia para practicar, fijar conceptos y desarrollar habilidades, un mapa de mi camino <i>from zero to hero</i>. Aun así, intentaré que todo tenga algo que aportar. Si dicho camino te sirve de algo, ya sea para hacerte una idea de hacia dónde dirigir el tuyo propio o incluso para no cometer los mismos errores que yo, ¡bienvenido sea!
-            </p>
-            <p>
-                Puedes consultar mis proyectos en mi <a href="https://github.com/AmefDAM">GitHub académico</a> o explorar el <a href="https://github.com/AmefDAM/web-practicas">código fuente de esta web</a>.
-            </p>
+
+            <div
+                id="dev-news-list"
+                class="dev-news__list"
+                aria-live="polite"
+                aria-busy="true"
+            >
+            <p class="dev-news__status">Cargando noticias...</p>
+            </div>
+
+            <a
+                class="dev-news__more"
+                href="https://news.ycombinator.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver más noticias
+                <span aria-hidden="true">→</span>
+            </a>
         </section>
-        <section id="proyectos">
-            <h2>
-                Proyectos
-            </h2>
-            <p>
-                <!-- Breve descripción de la sección -->
-                Proyectos académicos y personales en los que trabajo o que tengo previsto desarrollar.
-            </p>
-            <!-- Proyectos -->
-            <article id="web-practicas">
-                <h3>
-                    Amefdam's Site
-                </h3>
-                <p>
-                    <span class="project-status status-wip">WIP</span>
-                </p>
-                <p>
-                    Web personal para documentar mi aprendizaje, presentar proyectos y organizar conocimientos.
-                </p>
-                <p>
-                    <a href="https://amefdam.42web.io/">Web publicada</a>
-                    |
-                    <a href="https://github.com/AmefDAM/web-practicas">Código fuente</a>
-                </p>
-            </article>
-            <article id="juego-web">
-                <h3>
-                    Juego web
-                </h3>
-                <p>
-                    <span class="project-status status-planned">PLANNED</span>
-                </p>
-                <p>
-                    Proyecto de juego web previsto para desarrollar con PHP y MySQL. Todavía no iniciado.
-                </p>
-            </article>
-        </section>
-        <section id="conocimiento">
-            <h2>
-                Conocimiento
-            </h2>
-            <p>
-                Apuntes, documentación y recursos para organizar y consolidar lo que voy aprendiendo.
-            </p>
-             <!-- Recursos de conocimiento -->
-            <section id="conocimiento-git">
-                <h3>
-                    Git y GitHub
-                </h3>
-                <article id="git-notes">
-                    <h4>
-                        Git Notes
-                    </h4>
-                    <p>
-                        <span class="resource-type">Documentación</span>
-                    </p>
-                    <p>
-                        Apuntes prácticos sobre Git y GitHub, comandos, flujos de trabajo y gestión de repositorios.
-                    </p>
-                    <p>
-                        <a href="https://github.com/AmefDAM/gitnotes">Consultar apuntes</a>
-                    </p>
-                </article>
-            </section>
-            <section id="conocimiento-python">
-                <h3>
-                    Python y programación
-                </h3>
-                <article id="python-notebook">
-                    <h4>
-                        Python Fundamentals Notebook
-                    </h4>
-                    <p>
-                        <span class="resource-type">Documentación</span>
-                    </p>
-                    <p>
-                        Cuaderno de Jupyter Notebook con apuntes, ejemplos y ejercicios prácticos para aprender los fundamentos de Python.
-                    </p>
-                    <p>
-                        <a href="https://github.com/AmefDAM/python_fundamentals_notebook">Consultar apuntes</a>
-                    </p>
-                </article>
-                <article id="codewars-katas">
-                    <h4>
-                        Codewars Katas
-                    </h4>
-                    <p>
-                        <span class="resource-type">Prácticas</span>
-                    </p>
-                    <p>
-                        Colección de katas resueltos en Python para practicar programación, aplicar conceptos y desarrollar habilidades de resolución de problemas.
-                    </p>
-                    <p>
-                        <a href="https://github.com/AmefDAM/codewars-katas">Consultar soluciones</a>
-                    </p>
-                </article>
-            </section>
-        </section>
-    </main>
+        </aside>
+
+    </div>
 
     <footer>
         <p>
@@ -166,6 +201,9 @@
             Web en desarrollo.
         </p>
     </footer>
+
+
+    <script src="js/dev-news.js" defer></script>
 
 </body>
 </html>
