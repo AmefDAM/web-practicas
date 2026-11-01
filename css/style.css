@@ -6,6 +6,9 @@ body {
     margin: 0;
     background-color: #F6F1EB;
     color: #202B3C;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ==========================
@@ -63,6 +66,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+    flex: 1;
 }
 
 main section {
