@@ -13,6 +13,37 @@ const CACHE_KEY = "dev-news-cache-v2";
 const CACHE_TIME = 10 * 60 * 1000;
 
 const list = document.querySelector("#dev-news-list");
+const indicator = document.querySelector("#dev-news-indicator");
+
+function setNewsStatus(status) {
+  if (!indicator) return;
+  
+  const statuses = [
+    "loading",
+    "success",
+    "error"
+  ];
+
+  if (!statuses.includes(status)) return;
+
+  indicator.classList.remove(
+    ...statuses.map(
+      state => `dev-news__indicator--${state}`
+    )
+  );
+
+  indicator.classList.add(
+    `dev-news__indicator--${status}`
+  );
+
+  const labels = {
+    loading: "Cargando noticias",
+    success: "Noticias actualizadas",
+    error: "Error al cargar las noticias"
+  };
+
+  indicator.title = labels[status];
+}
 
 function getCachedNews() {
   try {
@@ -170,14 +201,21 @@ function showMessage(message) {
 }
 
 async function initNews() {
+  setNewsStatus("loading");
+  list.setAttribute("aria-busy", "true");
+
   try {
     const articles = await fetchNews();
     renderNews(articles);
+    setNewsStatus("success");
   } catch (error) {
     console.error("Error cargando noticias:", error);
+
     showMessage(
       "No se pudieron cargar las noticias. Inténtalo más tarde."
     );
+
+    setNewsStatus("error");
   } finally {
     list.setAttribute("aria-busy", "false");
   }
