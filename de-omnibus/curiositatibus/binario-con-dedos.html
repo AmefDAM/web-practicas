@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='utf-8'>
+    <title>Contar hasta 1023 con los dedos | De Omnibus Curiositatibus</title>
+    <link rel='stylesheet' href='../../css/style.css'>
+</head>
+<body>
+    <header class="site-header">
+        <!-- Nombre de web y navegación -->
+        <h1>
+            De omnibus curiositatibus
+        </h1>
+        <nav>
+            <!-- Enlaces a las secciones -->
+            <ul>
+                <li>
+                    <a href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../index.html">De Omnibus</a>
+                </li>
+                <li>
+                    <a href="index.html">Más curiosidades</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="article">
+            <header class="article-header">
+                <h2>Contar hasta 1023 con los dedos</h2>
+                <p>Una forma curiosa de usar el sistema binario.</p>
+            </header>
+                <p>
+                    Habitualmente utilizamos los dedos de las manos para contar hasta diez. Sin embargo, existe otra forma de hacerlo que 
+                    amplía considerablemente nuestras posibilidades: usar el <a href="https://es.wikipedia.org/wiki/Sistema_binario">sistema binario</a>.
+                </p>
+                <p>
+                    En lugar de asignar a cada dedo un valor numérico consecutivo, como hacemos al contar de la manera convencional, podemos
+                    asignarle un valor correspondiente a una <a href="https://es.wikipedia.org/wiki/Potencia_de_dos">potencia de dos</a>. De esta manera, cada dedo representa un bit que puede adoptar dos
+                    estados: levantado (1) o bajado (0)
+                </p>
+                <h3>¿Cómo funciona?</h3>
+                <p>
+                    El sistema binario utiliza únicamente dos cifras: 0 y 1. Cada posición de un número representa una potencia de dos, empezando 
+                    por 2<sup>0</sup> y aumentando sucesivamente.
+                </p>
+                <figure>
+                    <img src="img/binary-fingers-31.jpg" alt="Mano mostrando cómo representar números del 0 al 31 mediante cinco bits" width="600"/>
+                    <figcaption>
+                        Imagen de cómo contar hasta 31. Fuente: <a href="https://x.com/abakcus/status/1320751370731950081">Abackus</a>
+                    </figcaption>
+                </figure>
+                <p>
+                    Podemos aprovechar este principio asignando a cada uno de nuestros diez dedos los siguientes valores:
+                </p>
+                <table>
+                    <caption>Valor asignado a cada dedo</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Mano</th>
+                            <th scope="col">Dedo</th>
+                            <th scope="col">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Izquierda</td>
+                            <td>Pulgar</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Izquierda</td>
+                            <td>Índice</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Izquierda</td>
+                            <td>Corazón</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Izquierda</td>
+                            <td>Anular</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Izquierda</td>
+                            <td>Meñique</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Derecha</td>
+                            <td>Pulgar</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>Derecha</td>
+                            <td>Índice</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>Derecha</td>
+                            <td>Corazón</td>
+                            <td>128</td>
+                        </tr>
+                        <tr>
+                            <td>Derecha</td>
+                            <td>Anular</td>
+                            <td>256</td>
+                        </tr>
+                        <tr>
+                            <td>Derecha</td>
+                            <td>Meñique</td>
+                            <td>512</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Cada dedo levantado representa su valor, mientras que cada dedo bajado representa 0.
+                </p>
+                <p>
+                    Para obtener un número, basta con sumar los valores de todos los dedos levantados.
+                </p>
+                <h4>Algunos ejemplos:</h4>
+                <ul>
+                    <li><b>0:</b> Todos los dedos bajados.</li>
+                    <li><b>1:</b> Únicamente el pulgar izquierdo levantado.</li>
+                    <li><b>5:</b> Pulgar y corazón izquierdos levantados (1 + 4).</li>
+                    <li><b>10:</b> Índice y anular izquierdos levantados (2 + 8).</li>
+                    <li><b>31:</b> Todos los dedos de la mano izquierda levantados (1 + 2 + 4 + 8 + 16).</li>
+                    <li><b>32:</b> Únicamente el pulgar derecho levantado.</li>
+                    <li><b>100:</b> Índice y pulgar derechos, y corazón izquierdo levantados (64 + 32 + 4)</li>
+                </ul>
+                <h3>¿Por qué podemos llegar hasta 1023?</h3>
+                <p>
+                    Cada dedo tiene dos estados posibles: levantado o bajado.
+                    <br>
+                    Por tanto, diez dedos independientes permiten representar:
+                    <br>
+                    2<sup>10</sup> = 1024 combinaciones diferentes.
+                    <br>
+                    Como una de ellas representa el 0, podemos contar desde el 0 hasta el 1023, ambos incluidos.
+                    <br>
+                    Esto es <b>exactamente</b> lo mismo que ocurre con <b>un número binario de 10 bits</b>
+                </p>
+                <h3>Una curiosidad con aplicaciones reales</h3>
+                <p>
+                    Este principio no es simplemente un truco para contar con las manos. Es una demostración física de cómo funcionan 
+                    los sistemas binarios, que constituyen la base de la representación de información en los ordenadores.
+                </p>
+                <p>
+                    Cada bit puede representar dos estados y combinando varios bits podemos representar cantidades cada vez más grandes
+                     de información.
+                </p>
+            <footer class="article-footer">
+                <p>
+                    Publicado el
+                    <time datetime="2026-11-01">1 de noviembre de 2026</time>
+                </p>
+            </footer>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <p>
+            © 2026 Amef
+        </p>
+        <p>
+            <a href="https://github.com/AmefDAM">
+                GitHub
+            </a>
+            |
+            <a href="https://github.com/AmefDAM/web-practicas">
+                Código fuente de esta web
+            </a>
+        </p>
+        <p>
+            Web en desarrollo.
+        </p>
+    </footer>
+</body>
+</html>
