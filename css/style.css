@@ -285,6 +285,21 @@ th {
     background-color: #56876D;
 }
 
+/* Estado de carga */
+.dev-news__indicator--loading {
+    background-color: #E5B942;
+}
+
+/* Estado correcto */
+.dev-news__indicator--success {
+    background-color: #56876D;
+}
+
+/* Estado de error */
+.dev-news__indicator--error {
+    background-color: #C65353;
+}
+
 .dev-news__subtitle {
     color: #596579;
     font-size: 0.9rem;
