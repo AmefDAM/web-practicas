@@ -10,6 +10,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+body.de-omnibus {
+    background-color: #EADCCB;
+}
 
 /* ==========================
    2. HEADER
@@ -134,6 +137,23 @@ main section {
 #de-omnibus article {
     background-color: #E2CBB4;
     border-radius: 12px;
+}
+#de-omnibus.article-page {
+    background-color: #E2CBB4;
+}
+/* Tables */
+#de-omnibus table {
+    border-color: #C5AD91;
+}
+
+#de-omnibus th {
+    background-color: #A66F50;
+    color: #FFFFFF;
+}
+
+#de-omnibus td {
+    background-color: #D5B99B;
+    color: #202B3C;
 }
 /* ==========================
    8. ARTÍCULOS
