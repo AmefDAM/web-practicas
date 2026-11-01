@@ -12,7 +12,7 @@ body {
    2. HEADER
    ========================== */
 
-header {
+.site-header {
     background-color: #202B3C;
     color: #FFFFFF;
     text-align: center;
@@ -111,10 +111,53 @@ main section {
     border-radius: 12px;
 }
 /* ==========================
-   7. FOOTER
+   7. ARTÍCULOS
    ========================== */
 
-footer {
+.article-header {
+    background-color: transparent;
+    color: #202B3C;
+    text-align: center;
+    padding: 24px 0;
+    margin: 20px 0;
+    border: 1px solid #C5AD91;
+    border-radius: 12px;
+}
+
+.article-footer {
+    display: block;
+    background-color: transparent;
+    color: #596579;
+    padding: 16px 0;
+    border-top: 1px solid #D7E0EA;
+    margin-top: 32px;
+    text-align: right;
+}
+/* ==========================
+   8. TABLES
+   ========================== */
+
+table {
+    width: 40%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #D7E0EA;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #E3E8EF;
+}
+/* ==========================
+   9. FOOTER
+   ========================== */
+
+.site-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,24 +166,24 @@ footer {
     color: #FFFFFF;
 }
 /* ==========================
-   8. ENLACES DEL FOOTER
+   10. ENLACES DEL FOOTER
    ========================== */
 
-footer a {
+.site-footer a {
     color: #E3E8EF;
     text-decoration: none;
 }
 
-footer a:visited {
+.site-footer a:visited {
     color: #D7C1C8;
 }
 
-footer a:hover {
+.site-footer a:hover {
     color: #FFFFFF;
     text-decoration: underline;
 }
 /* ==========================
-   9. DISTRIBUCIÓN EN COLUMNAS
+   11. DISTRIBUCIÓN EN COLUMNAS
    ========================== */
 
 .content-layout {
@@ -167,7 +210,7 @@ footer a:hover {
 }
 
 /* ==========================
-   10. NOTICIAS DE PROGRAMACIÓN
+   12. NOTICIAS DE PROGRAMACIÓN
    ========================== */
 
 .dev-news {
@@ -255,7 +298,7 @@ footer a:hover {
 }
 
 /* ==========================
-   11. ADAPTACIÓN A MÓVILES
+   13. ADAPTACIÓN A MÓVILES
    ========================== */
 
 @media (max-width: 768px) {
@@ -274,7 +317,7 @@ footer a:hover {
         justify-content: center;
     }
 
-    footer {
+    .site-footer {
         flex-wrap: wrap;
         padding: 16px;
         text-align: center;
