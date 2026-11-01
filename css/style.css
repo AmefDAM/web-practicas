@@ -111,7 +111,28 @@ main section {
     border-radius: 12px;
 }
 /* ==========================
-   7. ARTÍCULOS
+   7. DE OMNIBUS
+   ========================== */
+
+#de-omnibus {
+    background-color: #EADCCB;
+}
+
+#de-omnibus > section,
+#de-omnibus > article,
+#de-omnibus > div {
+    background-color: #D5B99B;
+    border-radius: 12px;
+}
+#de-omnibus section section {
+    background-color: #E2CBB4;
+}
+#de-omnibus article {
+    background-color: #E2CBB4;
+    border-radius: 12px;
+}
+/* ==========================
+   8. ARTÍCULOS
    ========================== */
 
 .article-header {
@@ -134,7 +155,7 @@ main section {
     text-align: right;
 }
 /* ==========================
-   8. TABLES
+   9. TABLES
    ========================== */
 
 table {
@@ -154,7 +175,7 @@ th {
     background-color: #E3E8EF;
 }
 /* ==========================
-   9. FOOTER
+   10. FOOTER
    ========================== */
 
 .site-footer {
@@ -166,7 +187,7 @@ th {
     color: #FFFFFF;
 }
 /* ==========================
-   10. ENLACES DEL FOOTER
+   11. ENLACES DEL FOOTER
    ========================== */
 
 .site-footer a {
@@ -183,7 +204,7 @@ th {
     text-decoration: underline;
 }
 /* ==========================
-   11. DISTRIBUCIÓN EN COLUMNAS
+   12. DISTRIBUCIÓN EN COLUMNAS
    ========================== */
 
 .content-layout {
@@ -210,7 +231,7 @@ th {
 }
 
 /* ==========================
-   12. NOTICIAS DE PROGRAMACIÓN
+   13. NOTICIAS DE PROGRAMACIÓN
    ========================== */
 
 .dev-news {
@@ -298,7 +319,7 @@ th {
 }
 
 /* ==========================
-   13. ADAPTACIÓN A MÓVILES
+   14. ADAPTACIÓN A MÓVILES
    ========================== */
 
 @media (max-width: 768px) {
