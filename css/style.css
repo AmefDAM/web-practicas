@@ -56,6 +56,7 @@ body.de-omnibus {
     background-repeat: no-repeat;
 
     opacity: 0.18;
+    opacity: clamp(0, calc((100vw - 768px) / 6400px), 0.18);
     pointer-events: none;
     z-index: -1;
 }
