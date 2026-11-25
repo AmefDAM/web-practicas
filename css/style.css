@@ -67,6 +67,15 @@ body.de-omnibus {
     margin: 0 auto 5px;
 }
 
+.om-header {
+    background-color: #575042;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* ==========================
    3. NAVEGACIÓN
    ========================== */
@@ -97,6 +106,22 @@ nav a:hover {
     background-color: #7B3445;
 }
 nav a:focus-visible,
+a:focus-visible {
+    outline: 3px solid #7B3445;
+    outline-offset: 3px;
+}
+
+nav.om-nav a {
+    padding: 8px 16px;
+    background-color: #86755b;
+    color: #FFFFFF;
+    border-radius: 20px;
+    text-decoration: none;
+}
+nav.om-nav a:hover {
+    background-color: #7B3445;
+}
+nav.om-nav a:focus-visible,
 a:focus-visible {
     outline: 3px solid #7B3445;
     outline-offset: 3px;
@@ -257,6 +282,16 @@ th {
     font-family: Orbitron;
     font-size: 0.75em;
 }
+.om-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #575042;
+    color: #FFFFFF;
+    font-family: Orbitron;
+    font-size: 0.75em;
+}
 /* ==========================
    11. ENLACES DEL FOOTER
    ========================== */
@@ -274,6 +309,21 @@ th {
     color: #FFFFFF;
     text-decoration: underline;
 }
+
+.om-footer a {
+    color: #E3E8EF;
+    text-decoration: none;
+}
+
+.om-footer a:visited {
+    color: #D7C1C8;
+}
+
+.om-footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 /* ==========================
    12. DISTRIBUCIÓN EN COLUMNAS
    ========================== */
