@@ -1,4 +1,19 @@
 /* ==========================
+   0. FUENTES
+   ========================== */
+@font-face {
+    font-family: Orbitron;
+    src: url(../assets/font/orbitron/Orbitron-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: OriginTech;
+    src: url(../assets/font/origin-tech/OriginTech.ttf);
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(../assets/font/space-grotesk/SpaceGrotesk.ttf);
+}
+/* ==========================
    1. ESTRUCTURA GENERAL
    ========================== */
 
@@ -17,10 +32,6 @@ body.de-omnibus {
 /* ==========================
    2. HEADER
    ========================== */
-@font-face {
-    font-family: OriginTech;
-    src: url(../assets/font/OriginTech\ personal\ use.ttf);
-}
 
 .site-header {
     background-color: #273549;
@@ -54,6 +65,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    font-family: Orbitron;
 }
 
 nav ul {
@@ -89,6 +101,7 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     flex: 1;
+    font-family: SpaceGrotesk;
 }
 
 main section {
@@ -96,6 +109,9 @@ main section {
     margin: 20px 0;
     border-radius: 16px;
     background-color: #E3E8EF;
+}
+h2 {
+    font-family: Orbitron;
 }
 
 /* ==========================
