@@ -17,6 +17,10 @@ body.de-omnibus {
 /* ==========================
    2. HEADER
    ========================== */
+@font-face {
+    font-family: OriginTech;
+    src: url(../assets/font/OriginTech\ personal\ use.ttf);
+}
 
 .site-header {
     background-color: #273549;
@@ -25,6 +29,7 @@ body.de-omnibus {
     padding: 40px 20px;
     width: 100%;
     box-sizing: border-box;
+    font-family: OriginTech;
 }
 .cabecera::before {
     content: "";
