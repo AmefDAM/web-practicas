@@ -29,7 +29,9 @@ body.de-omnibus {
     padding: 40px 20px;
     width: 100%;
     box-sizing: border-box;
-    font-family: OriginTech;
+}
+.cabecera {
+        font-family: OriginTech;
 }
 .cabecera::before {
     content: "";
