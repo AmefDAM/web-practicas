@@ -40,6 +40,24 @@ body.de-omnibus {
     padding: 40px 20px;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+.site-header::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 30%;
+
+    background-image: url("../assets/img/branding/circuit-white.svg");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: -1;
 }
 .cabecera {
         font-family: OriginTech;
