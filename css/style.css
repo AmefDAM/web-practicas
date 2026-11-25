@@ -45,6 +45,16 @@ body.de-omnibus {
         font-family: OriginTech;
         font-size: 4em;
 }
+.cabecera-om {
+    font-family: OriginTech;
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+.cabecera-om + p {
+    font-family: Orbitron;
+    font-size: 0.8em;
+    margin-top: 0px;
+}
 .cabecera::before {
     content: "";
     display: block;
@@ -244,6 +254,8 @@ th {
     gap: 20px;
     background-color: #202B3C;
     color: #FFFFFF;
+    font-family: Orbitron;
+    font-size: 0.75em;
 }
 /* ==========================
    11. ENLACES DEL FOOTER
@@ -299,6 +311,7 @@ th {
     border-radius: 16px;
     background-color: #E5EDDF;
     overflow-wrap: anywhere;
+    font-family: SpaceGrotesk;
 }
 
 .dev-news__header {
