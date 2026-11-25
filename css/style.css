@@ -145,6 +145,9 @@ main section {
     border-radius: 16px;
     background-color: #E3E8EF;
 }
+main article {
+    padding: 24px;
+}
 h2 {
     font-family: Orbitron;
 }
