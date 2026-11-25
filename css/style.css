@@ -147,6 +147,7 @@ main section {
 }
 main article {
     padding: 24px;
+    margin: 20px 0;
 }
 h2 {
     font-family: Orbitron;
