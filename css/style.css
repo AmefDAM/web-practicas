@@ -33,17 +33,33 @@ body.de-omnibus {
    2. HEADER
    ========================== */
 
-.site-header {
-    background-color: #273549;
+/* Common header properties */
+
+.site-header,
+.om-header {
     color: #FFFFFF;
     text-align: center;
     padding: 40px 20px;
     width: 100%;
+    min-height: 356px;
     box-sizing: border-box;
     position: relative;
     isolation: isolate;
     overflow: hidden;
 }
+
+/* Header backgrounds */
+
+.site-header {
+    background-color: #273549;
+}
+
+.om-header {
+    background-color: #575042;
+}
+
+/* Circuit overlay */
+
 .site-header::after {
     content: "";
     position: absolute;
@@ -57,42 +73,53 @@ body.de-omnibus {
 
     opacity: 0.18;
     opacity: clamp(0, calc((100vw - 768px) / 6400px), 0.18);
+
     pointer-events: none;
     z-index: -1;
 }
-.cabecera {
-        font-family: OriginTech;
-        font-size: 4em;
-}
+
+/* Header titles */
+
+.cabecera,
 .cabecera-om {
     font-family: OriginTech;
     font-size: 4em;
+}
+
+.cabecera-om {
     margin-bottom: 5px;
 }
+
+/* De Omnibus subtitle */
+
 .cabecera-om + p {
     font-family: Orbitron;
     font-size: 0.8em;
     margin-top: 0px;
 }
-.cabecera::before {
+
+/* Common logo properties */
+
+.cabecera::before,
+.cabecera-om::before {
     content: "";
     display: block;
     width: 80px;
     height: 80px;
-    background-image: url("../assets/img/branding/amef-favicon-180.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto 5px;
 }
 
-.om-header {
-    background-color: #575042;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 40px 20px;
-    width: 100%;
-    box-sizing: border-box;
+/* Header logos */
+
+.cabecera::before {
+    background-image: url("../assets/img/branding/amef-favicon-180.png");
+}
+
+.cabecera-om::before {
+    background-image: url("../assets/img/branding/amef-om-favicon-180.png");
 }
 
 /* ==========================
