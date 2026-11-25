@@ -191,6 +191,11 @@ h2 {
     background-color: #EAD5D9;
     border-radius: 12px;
 }
+
+section section article {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+}
 /* ==========================
    7. DE OMNIBUS
    ========================== */
